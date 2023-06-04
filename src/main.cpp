@@ -13,6 +13,8 @@
 
 void setup() {
   // put your setup code here, to run once:
+  M5.begin();
+  Serial.begin(1115200);
   display_setup();
   pixel_setup();
   buttons_setup();
