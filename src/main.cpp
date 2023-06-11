@@ -1,14 +1,13 @@
-#include <Arduino.h>
-#include <FastLED.h>
-#include "m5station.h"
-#include <M5GFX.h>
-#include <M5Unified.h>
+#include "config/all.h"
 #include "display.h"
 #include "buttons.h"
 #include "pixelleds.h"
-#include <EasyButton.h>
-#include "Ticker.h"
+
 // put function declarations here:
+//CRGB NeoPixel[7];
+void led_brithe();
+void set_led_color(int color);
+void displayshowbuttons();
 bool once = true;
 void setup()
 {
@@ -34,4 +33,11 @@ void loop()
     
   }
   once = false;
+displayshowbuttons();
+
+
+}
+
+void displayshowbuttons(){
+canvas.fillSprite(BLACK);
 }

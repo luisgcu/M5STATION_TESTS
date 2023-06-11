@@ -95,5 +95,6 @@ typedef enum {
 // images resources
 extern const unsigned char img_startup[64800];
 extern const unsigned char img_background[64800];
+extern const unsigned char imgiot[97200];
 
 #endif  // ! __M5STATION_H__

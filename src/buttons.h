@@ -1,7 +1,9 @@
+
+#pragma once
+#include "config/all.h"
 void btn_task(void *arg);
 bool once2 = true;
-#pragma once
-#include <EasyButton.h>
+//#include "pixelleds.h"
 // ButtonA
 EasyButton buttonA(BTN_A_PIN);
 // ButtonB
@@ -12,7 +14,8 @@ EasyButton buttonC(BTN_C_PIN);
 // Callback function to be called when button1 is pressed
 void onButtonAPressed()
 {
-    Serial2.println("ButtonA pressed");
+    //Serial2.println("ButtonA pressed");
+    //Neopixel[0]=CRGB(0, 255, 0);
 }
 void onButtonBPressed()
 {
