@@ -16,10 +16,11 @@ void setup()
   pinMode(PORT485_DE_RE, OUTPUT);
   digitalWrite(PORT485_DE_RE, HIGH); // DE&RE
   Serial2.begin(115200);
+  Serial2.println(VERSION);
   Serial2.print("setup() running on core ");
   Serial2.println(xPortGetCoreID());
-  display_setup();
   pixel_setup();
+  display_setup();  
   buttons_setup();
 }
 
